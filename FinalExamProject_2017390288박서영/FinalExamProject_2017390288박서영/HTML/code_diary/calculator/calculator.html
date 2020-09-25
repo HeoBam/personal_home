@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+
+    <title>계산기</title>
+
+
+
+
+    <link rel="stylesheet" href="css.css">
+
+
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+</head>
+<body>
+<div id="container">
+    <div>
+        <div>
+            <input id="display" type="text" />
+        </div>
+        <div>
+            <input id="result" type="text" />
+        </div>
+
+        <div>
+            <div class="buttonWrap">
+                <button onclick="addOutput('%')" style="background-color: #ccecff">%</button>
+                <button onclick="reset()" style="background-color: #ccecff">AC</button>
+                <button onclick="del()" style="background-color: #ccecff">C</button>
+                <button onclick="addOutput('/')" style="background-color: #ccecff">/</button>
+            </div>
+            <div class="buttonWrap">
+                <button onclick="addOutput(9)">9</button>
+                <button onclick="addOutput(8)">8</button>
+                <button onclick="addOutput(7)">7</button>
+                <button onclick="addOutput('*')" style="background-color: #ccecff">*</button>
+            </div>
+            <div class="buttonWrap">
+                <button onclick="addOutput(6)">6</button>
+                <button onclick="addOutput(5)">5</button>
+                <button onclick="addOutput(4)">4</button>
+                <button onclick="addOutput('+')" style="background-color: #ccecff">+</button>
+            </div>
+            <div class="buttonWrap">
+                <button onclick="addOutput(3)">3</button>
+                <button onclick="addOutput(2)">2</button>
+                <button onclick="addOutput(1)">1</button>
+                <button onclick="addOutput('-')" style="background-color: #ccecff">-</button>
+            </div>
+            <div class="buttonWrap">
+                <button onclick="addOutput(0)">0</button>
+                <button onclick="addOutput('.')" style="background-color: #ccecff">.</button>
+                <button style="width:200px"  onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js.js"></script>
+</body>
+</html>

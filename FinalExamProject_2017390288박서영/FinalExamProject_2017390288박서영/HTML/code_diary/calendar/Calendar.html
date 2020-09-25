@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="Ccss.css">
+
+</head>
+
+<body onload="build();">
+<table  id="calendar">
+    <tr>
+        <td><font size=1%; color="#B3B6B3"><label onclick="beforem()" id="before" ></label></font></td>
+        <td colspan="5" align="center" id="yearmonth"></td>
+        <td><font size=1%; color="#B3B6B3"><label onclick="nextm()" id="next"></label></font></td>
+    </tr>
+    <tr>
+        <td id="sunday">일</td>
+        <td> 월 </td>
+        <td> 화 </td>
+        <td > 수 </td>
+        <td> 목 </td>
+        <td> 금 </td>
+        <td id="saturday">토</td>
+    </tr>
+</table>
+
+<script src="CJ.js"></script>
+
+</body>
+
+</html>

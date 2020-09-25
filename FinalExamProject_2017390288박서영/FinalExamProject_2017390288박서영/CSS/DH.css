@@ -1,0 +1,35 @@
+.swiper-container {
+    /*width:border-box;*/
+    /*box-shadow:0 0 20px #ccc inset;*/
+}
+.swiper-slide {
+    text-align:center;
+    display: inline-block;
+    width:border-box;
+    box-shadow:0 0 20px #ccc inset;
+    margin: 2rem;
+}
+.swiper-wrapper img {
+    width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    margin: 1rem;
+}
+
+
+#hobbyWrap a  {
+    text-align:center;
+    display: inline-block;
+    width:border-box;
+    box-shadow:0 0 20px #ccc inset;
+    margin: 2rem;
+}
+
+#hobbyWrap a iframe {
+    width: 600px
+    height: 500px;
+    object-fit: cover;
+    margin: 1rem;
+    overflow: auto;
+
+}

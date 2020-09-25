@@ -1,0 +1,267 @@
+#wrapper{ width: 100%; height: 100%; }
+
+/* 상단 */
+#header{ position: relative; z-index: 2;}
+#header #headerTop{
+    margin: 5px 0 0 0; padding: 8px 16px 0px 16px;
+    overflow: hidden;
+}
+#header #headerTop h1.logo{
+    float: left;
+    font-size: 37px;
+    color: #555555;
+    margin: 4px 0 6px 0;
+}
+#header #headerTop h1.logo .green{ color: #4caf50; }
+#header #headerTop p.header_desc{
+    float: right;
+    margin: 30px 0 0 0;
+    letter-spacing: 2px;
+}
+#header #headerBottom{
+    background-color: #4caf50; !important;
+    color: #fff !important;
+    font-size: 17px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 5px 0 rgba(0,0,0,0.16);
+}
+#header #headerBottom #menuContainer li{ padding: 16px; float: left; }
+#header #headerBottom #utilMenu li { float: right; padding-right: 16px; }
+#header #headerBottom #utilMenu { padding: 16px; font-size: 16px;  }
+
+/* 왼쪽 메뉴 */
+#lnb{
+    float: left;
+    position: relative; z-index: 1;
+    background-color: #fff;
+    width: 198px;
+    padding: 0 16px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 5px 0 rgba(0,0,0,0.16);
+}
+
+#lnb .w3-container{
+    margin: 16px 0 10px 0;
+    font-size: 20px;
+}
+#lnb .w3-container h4{ font-weight: normal; }
+#lnb .w3-bar-item { display: block; font-size: 16px; }
+
+/* 오른쪽 콘텐츠 영역 */
+#content{
+    float: left;
+    position: relative; z-index: 0;
+    width: calc( 100% - 230px );
+    height: 100px;
+}
+#content .section{ width: 100%; overflow: hidden; }
+#content .section.bg_gray{ background-color: #f1f1f1; }
+#content .section.bg_deepgray {
+    background-color: #616161;
+    padding: 32px 0;
+}
+
+#content .section .article{
+    padding: 27px;
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+}
+#content .section .article a.button.gray{
+    margin: 5px 5px 5px 0;
+    padding: 8px 16px;
+    background-color: #616161;
+    color: #ffffff;
+    font-size: 16px;
+    display: inline-block;
+}
+#content .section .article a.button.gray:hover{ background-color: #dadada; color: black; }
+#content .section .article a.button.green{
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: #ffffff;
+    font-weight: normal;
+    display: inline-block;
+}
+#content .section .article a.button.green:hover{ box-shadow: 0 0px 10px 0 rgba(0,0,0,0.16), 0 0px 10px 0 rgba(0,0,0,0.16); }
+
+/* article tag 공통*/
+#content .section .article.tag{ text-align: left; }
+#content .section .article .article_bg_con{
+    background-color: #f1f1f1 !important;
+    overflow: hidden;
+    padding: 16px;
+}
+#content .section .article.tag .tag_box{
+    border-left: 4px solid #58aa47;
+    padding: 8px 12px;
+    margin: 16px 0;
+    background-color: #ffffff;
+}
+#content .section .article.tag .title{ font-size: 24px; margin: 10px 0; font-weight: normal; }
+
+/* article 공통 */
+#content .section .article{ text-align: center; }
+#content .section .article h1{ font-size: 80px; color: #555555; height: 92px; font-weight: normal; }
+#content .section .article h2{ font-size: 36px; color: black; font-weight: normal; margin: 10px 0; }
+#content .section .article .desc{ font-size: 24px; color: #555555; margin: 24px 0; }
+#content .section .article .desc2{ font-size: 20px; Fcolor: #555555; margin: 10px 0; }
+#content .section .article .desc3{ font-size: 20px; color: #3a3a3a; margin: 10px 0; }
+#content .section .article.wid100{ width: 100%; }
+
+/* article ect */
+#content .section.ect .article .article_bg_white{
+    background-color: #ffffff;
+    padding: 8px 16px 24px 16px;
+}
+
+/* article w3 */
+#content .section.w3 .article{
+    width: 33.33%;
+}
+#content .section.w3 img{
+    width: 150px;
+    height: 128px;
+    margin-top: 16px;
+}
+
+/* article exercises */
+#content .section.exercises{
+    padding: 48px 24px 68px 24px;
+    box-sizing: border-box;
+}
+#content .section.exercises .article{ padding: 0; }
+#content .section.exercises .article h2{ color: #ffffff; }
+#content .section.exercises .article .desc2 { color: #ffffff; }
+
+#content .section.exercises .ex1 a{
+    width: 33.33%;
+    padding: 0 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section.exercises .ex2 a{
+    width: 20%;
+    padding: 0 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section.exercises a.button.green{
+    padding: 16px;
+    margin: 15px 0;
+}
+
+#content .section.exercises .ex1 a{ width: 30%; }
+#content .section.exercises .ex2 a{ width: 10.8%; }
+
+/* article templates */
+#content .section.templates .point{ font-weight: bold; }
+
+#content .section.templates img{
+    width: 100%;
+    margin: 16px 0 20px 0;
+}
+
+/* article howto*/
+#content .section.howto .full{
+    width: 48%;
+    height: 250px;
+    border: 5px solid #dadada;
+    overflow: scroll;
+    float: left;
+    box-sizing: border-box;
+    text-align: left;
+}
+#content .section.howto .auto{
+    width: 47%;
+    height: 250px;
+    border: 5px solid #dadada;
+    overflow: scroll;
+    float: right;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/* article certificates */
+#content .section.certificates .article{
+    padding: 0;
+    background-color: #000000;
+    position: relative;
+}
+
+#content .section.certificates .article .cov{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    padding: 15px;
+    top: 0;
+}
+#content .section.certificates .article .cov h2{
+    color: #ffffff;
+}
+#content .section.certificates .article .cov .desc3{
+    color: #ffffff;
+}
+
+#content .section.certificates img{
+    max-width: 100%;
+    margin: auto;
+    display: block;
+}
+
+#content .section.certificates .ddd{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#content .section.certificates a.button.deepgreen{
+    margin: 15px 0;
+    padding: 12px 24px;
+    background-color: #4caf50;
+    color: #ffffff;
+    font-size: 17px;
+    display: block;
+}
+#content .section.certificates a.button.deepgreen:hover{ background-color: #f1f1f1; color: black; }
+
+/* section footer */
+#footer{
+    background-color: #616161;
+    color: #ffffff;
+    text-align: center;
+    padding: 32px 16px;
+}
+
+#footer .aab{
+    padding: 32px 16px;
+    float: left;
+}
+
+#footer .aab a.button.lightgray{
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    background-color: #f1f1f1;
+    color: #000000;
+    font-size: 16px;
+}
+#footer .aab a.button.lightgray:hover{ background-color: #dadada; }
+
+#footer .abb{
+    margin-top: 16px;
+    letter-spacing: 4px;
+    float: right;
+}
+
+#footer .bbb{
+    margin: 15px 0;
+    font-size: 15px;
+    display: inline-block;
+}
+
+#footer .bbb a{ text-decoration: underline; }
+
+#footer ul { font-size: 15px;  text-decoration: underline; }

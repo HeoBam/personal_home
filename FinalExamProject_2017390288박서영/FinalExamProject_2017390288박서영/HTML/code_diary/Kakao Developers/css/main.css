@@ -1,0 +1,359 @@
+/* li 상단 줄 맞추는 방법? */
+
+
+
+#wrapper{ width: border-box; height: border-box;
+    background-color: black;
+    text-align: center;
+
+    }
+
+
+
+
+/* header */
+
+#header { height: 80px; width: 100%;
+    background-color: rgba(26,26,28,0.9) !important;
+    letter-spacing: 1px;
+    overflow: hidden;
+    /*position: relative;*/z-index: 2;
+    position: fixed;
+    top: 0; /*https://www.daleseo.com/css-position-fixed-navigation/*/
+
+}
+#header .logo {
+    color: #ffffff;
+    padding: 26.5px 0 26.5px 20px;
+    margin-left: 10px;
+    float: left;
+    font-size: 20px ;
+    display: inline-block;
+}
+#header #TopLine {padding: 29.5px 20px 29.5px 0 ;
+    display: inline-block;
+    font-size: 15px;
+    float: right;
+    color: #ffffff;
+}
+#header #TopLine li{
+    color: #ffffff;
+    display: inline-block;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+#header #TopLine i{
+    color: #ffffff;
+    display: inline-block;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+/*Top Slide*/
+
+#TopSlide {
+    height: 530px;
+   /* margin-top: -80px;*/
+    /*margin: auto;*/
+    /*position: relative;*/z-index: 1;
+    background-color: #050a2d;
+}
+#TopSlide ul,li{list-style:none;}
+#TopSlide .slide{margin-left: 40px; overflow:hidden;}
+#TopSlide .slide ul{width:calc(100% * 3);display:flex;animation:slide 15s infinite;} /* slide를 15초동안 진행하며 무한반복 함 */
+#TopSlide .slide li{width:calc(100% / 3);height:300px; padding: 120px 16px 0 30px;  float: bottom; margin-top: 120px;}
+#TopSlide .slide li:nth-child(1){background-image: url('../asset/img/Build_with.png'); background-repeat: no-repeat;}
+#TopSlide .slide li:nth-child(2){background-image: url('../asset/img/Connect_with.png'); background-repeat: no-repeat;}
+#TopSlide .slide li:nth-child(3){background-image: url('../asset/img/Create_with.png'); background-repeat: no-repeat;}
+@keyframes slide {
+    0% {margin-left:0;} /* 0 ~ 10  : 정지 */
+    13% {margin-left:0;} /* 10 ~ 25 : 변이 */
+    26% {margin-left:-100%;} /* 25 ~ 35 : 정지 */
+    39% {margin-left:-100%;} /* 35 ~ 50 : 변이 */
+    52% {margin-left:-200%;}
+    65% {margin-left:-200%;}
+    78% {margin-left:-100%;}
+    91% {margin-left:-100%;}
+    100% {margin-left:0;}
+}
+#TopSlide .button {
+    position: relative;
+    width: 180px;
+    height: 50px;
+    margin-top: -190px;
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 50px;
+    letter-spacing: -.2px;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+#TopSlide .button:hover {background-color: #ffd200; }
+
+/* articles */
+
+#articles h1{
+    font-size: 30px;
+    color: rgba(255,255,255,0.5);
+    margin-left: 40px;
+    padding: 100px 0 0 0;
+    /*margin-top: 100px;*/
+    text-align: left;
+}
+#articles .Box {margin: 10px;  display: inline-block; float:none; overflow: hidden; }
+#articles .BlackBox {
+    box-sizing: border-box;
+    height: 295px;
+    width: 260px;
+    margin: 0 0 0 8px;
+    background-color: rgb(26,26,28);
+    padding: 25px 20px 20px;
+    display: inline-block; float:left;
+}
+
+#articles .BlackBox h2 {color: white; font-size: 22px; text-align: left !important; }
+#articles .BlackBox img.image{position:relative; left: 85px; top: -37px; display: inline-block;}
+#articles .BlackBox p {color: #d5d5d5; font-size: 14px;
+    line-height: 20px; text-align: left !important; padding-bottom: 30px; }
+
+#articles .box_btn {  position: relative; top: -18px;
+
+}
+#articles .box_btn a.button_grey{
+    margin-left: 1px;
+    padding: 8px 21px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #f1f1f1;
+    font-size: 14px;
+    display: inline-block;
+    float: bottom;
+    text-align: center !important;
+}
+#articles .BlueBox {
+    box-sizing: border-box;
+    height: 295px;
+    width: 260px;
+    margin: 0 0 0 8px;
+    background-color: rgb(0, 0, 255);
+    padding: 25px 20px 20px;
+    display: inline-block;
+    float:left;
+    color: white;
+
+
+}
+
+
+
+/* API */
+
+#API h1{
+    font-size: 30px;
+    color: rgba(255,255,255,0.5);
+    margin-left: 40px;
+    padding: 100px 0 0 0;
+    text-align: left;
+}
+#API h3{ color: white; font-size: 40px;
+    text-align: left; margin-left: 40px; padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+#API ul{height: 320px; overflow: hidden; }
+#API li {display: inline-block;
+    width: 300px; height: 330px;
+    text-align: left !important;
+    margin-right: 50px;
+
+
+}
+#API li.hashtag img { display: inline-block; margin-left: 40px; float: left; margin-top: 24px; }
+#API li.hashtag h2 {color: white; font-size: 22px;
+    text-align: left !important; padding-top: 40px;margin-right: 70px ;
+    display: inline-block;
+
+}
+
+#API li.hashtag p.desc_feature {font-size: 16px;
+    color: rgba(255,255,255,0.6);
+    padding: 21px 0 0;
+    text-align: left;
+    margin-left: 40px;
+}
+
+#API li.hashtag div.hashblue {
+    color: #2d50ff;
+    padding: 17px 0 0;
+    margin-left: 40px;
+    font-size: 16px;
+    text-align: left; }
+
+#API li.hashtag div.hashpurple {
+    color: #782FFE;
+    padding: 17px 0 0;
+    margin-left: 40px;
+    font-size: 16px;
+    text-align: left; }
+
+#API li.hashtag div.hashsky {
+    color: #0faac8;
+    padding: 17px 0 0;
+    margin-left: 40px;
+    font-size: 16px;
+    text-align: left; }
+
+
+
+/* notice */
+
+#notice {margin:0  40px ; }
+#notice h1{
+    font-size: 30px;
+    color: rgba(255,255,255,0.5);
+    padding: 100px 0 0 0;
+    text-align: left;
+}
+
+#notice div.box_shape {
+    width: 100%;
+    overflow: hidden;
+    height: 170px;
+    background-color: #0e194e;
+    margin-top: 30px;
+    position: relative;
+
+
+}
+#notice div.box_shape img{ margin: 50px 50px 0 0; float: right; display: block;  }
+#notice div.box_shape p { /*float: right;*/ margin: 50px 50px 0 0; color: white; position: relative; top: 50px;
+    left: 519px ;
+}
+
+#notice li { text-align: left;
+    height: 72px;
+    border-bottom: 1px solid #252525;
+    box-sizing: border-box;
+}
+#notice li span.txt_notice {
+    color: rgba(255,255,255,0.6);
+    font-size: 18px;
+    padding: 5px 0 0 5px;
+    line-height: 32px;
+    position: relative; top: 14px;
+    display: table-cell;
+    vertical-align: middle;
+
+}
+#notice li span.txt_date {
+    color: rgba(255,255,255,0.5);
+    font-size: 12px;
+    padding: 0 5px 0 10px ;
+    line-height: 32px;
+    position: relative;top: 16px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/* about */
+
+#about {margin:0  40px ; }
+#about h1{
+    font-size: 30px;
+    color: rgba(255,255,255,0.5);
+    padding: 100px 0 0 0;
+    text-align: left;
+}
+
+#about ul {width: 95%; height: 33%; margin: 40px 0 0 0; text-align: center;  }
+#about li {  display: inline-block; margin: 5px;
+     text-align: center;
+}
+#about li.about div.box_news {
+    width: 260px;
+    height: 260px;
+    background-color: #12062E;
+
+
+}
+
+#about li.about div.box_news2 {
+    width: 260px;
+    height: 260px;
+    background-color: #1d094b;
+
+}
+
+
+#about li.about div.box_news3 {
+    width: 260px;
+    height: 260px;
+    background-color: #2d0273;
+
+}
+#about li.about p { text-align: left; margin: 10px 0 0 10px;  }
+#about li.about p.grey {
+    color: rgba(255,255,255,0.4);
+    font-size: 13px;
+}
+
+#about li.about p.white {
+    color: rgba(255,255,255,0.9);
+    font-weight: bold;
+    font-size: 14px;
+}
+#about li.about p.icon {
+    color: rgba(255,255,255,0.9);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 19px  0 0 10px ;
+}
+
+
+/* footer */
+
+#footer { height: 80px; width: 100%;
+    background-color: rgba(26,26,28,0.9) !important;
+    letter-spacing: 1px;
+    overflow: hidden;
+    margin-top: 100px;
+    display: inline-block;
+    text-align: center;
+}
+
+#footer div.area_copyright {
+    color: rgba(255,255,255,0.4);
+    font-size: 13px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+#footer div.foot {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    float: right;
+    margin-top: 30px;
+    padding-right: 20px;
+    position: relative; right: 200px;
+}
+
+#footer div.button_on {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    position: relative; left: 280px;
+    border: 1px solid #33343b;
+
+}
+#footer div.button_on p{
+    color: white;
+    font-size: 13px;
+    line-height: 40px;
+    padding: 0 40px 0 20px;
+}
+
+#footer div.button_on p img {
+    position: relative; top: 6px; right: -29px;
+}

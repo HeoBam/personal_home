@@ -1,0 +1,30 @@
+html, body {
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 1.2rem;
+
+}
+
+table
+{
+    border:1px solid #BDBDBD;
+    text-align:center;
+    width:500px;
+    height: 500px;
+    background-color: rgba(209,181,225,0.2);
+    color: white;
+}
+
+#saturday{
+    color: #5297e4;
+}
+
+#sunday{
+    color: #ff4f57;
+}

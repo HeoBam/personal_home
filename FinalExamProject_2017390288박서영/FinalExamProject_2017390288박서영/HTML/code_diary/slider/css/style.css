@@ -1,0 +1,26 @@
+html, body{ width: 100%; height: 100%; padding: 0; margin: 0; }
+*{ padding: 0; margin: 0; }
+ul, li{ list-style-type: none; }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 1.2rem;
+    height: 500px;
+
+}
+#content{ padding: 100px; }
+
+.btn{ width: 50px; margin-top: 38px; cursor: pointer; }
+.btn img{ width: 100%; }
+.rotate180{ transform: rotate(180deg); }
+
+.btn, .slider_visual_con{ float: left }
+
+.slider_visual_con{ width: 330px; height: 137px; overflow: hidden; }
+.slider_visual_con ul{ width: 2000px; }
+.slider_visual_con ul li{ float: left; margin: 0 5px; }
+.slider_visual_con ul li img{ width: 100px; height: 137px; }

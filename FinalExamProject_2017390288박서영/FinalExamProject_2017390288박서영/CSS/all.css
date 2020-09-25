@@ -1,0 +1,387 @@
+html, body {padding: 0; margin: 0; }
+table {border-collapse: collapse;}
+*{padding: 0; margin: 0;}
+ul, li {list-style-type: none;}
+
+#wrap{ max-width: 1200px; margin: auto;
+    overflow: auto;
+
+}
+
+#wrap {
+    border: 1px solid  #E0E3da;
+}
+
+body {
+    font-family: '맑은 고딕 Semilight', sans-serif, "Times New Roman" ;
+    background-image: url("../Asset/background_image.jpg");
+    background-color: #566270;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+
+
+/*헤더*/
+#header {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: block;
+}
+
+#header a img {
+    display: block;
+    float: left;
+    margin: -1rem 2rem -1rem 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+#header #player  {
+    display: block;
+    float: right;
+    width: 300px;
+    height: 25px;
+    margin: -16px 2rem -1rem 2rem;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+
+}
+                /*audio 왜 높이가 자꾸 왔다갔다 하지? */
+
+/*헤더 프로필 부분만*/
+
+
+#header .profileImage {
+    border-radius: 100%;
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.25);
+    margin: 1rem 0 ;
+    text-align: center;
+}
+
+#header .profileImage img {
+    border-radius: 100%;
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+#header ul li {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+    border-radius: 100%;
+    border:1px solid rgba(255,255,255,0.25);
+    background-color: rgba(255,255,243,0.05);
+    justify-content: center !important;
+    align-items: center;
+    overflow: auto;
+}
+
+#header ul.icons li:hover{
+    border:1px solid rgba(255,255,255,0.25);
+    background-color: rgba(255,255,255,0.2);
+}
+
+#header ul.icons li a {
+    color: rgba(255, 255, 243, 0.6);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+/*상단메뉴*/
+
+#topMenu ul li {
+    display: inline-block;
+    width: 8rem;
+    height: 3rem;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+#topMenu ul a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #fffff3;
+}
+
+#topMenu ul a:hover{
+    color: #d1b6e1;
+}
+
+
+
+/*최하단 푸터*/
+
+#footer {
+    text-align: center;
+    color: rgba(255, 255, 243, 0.5);
+    font-weight: 200;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-size: 0.8rem;
+}
+
+#footer a{
+    text-decoration: none;
+    color: rgba(209, 182, 225, 1);
+}
+
+
+
+/*공통텍스트*/
+
+.text{
+
+     text-align: center;
+     color: rgba(255, 255, 243, 1);
+     font-weight: 300;
+     /*padding-top: 1rem;*/
+     padding-bottom: 1rem;
+     font-size: 1rem;
+    display: block;
+
+ }
+
+.text  a{
+    text-decoration: none;
+    color: rgba(255, 255, 243, 1);
+}
+
+.text   a:hover{
+    color: #d1b6e1;
+}
+
+.text2{
+
+    text-align: right;
+    margin-right: 10%;
+    color: rgba(255, 255, 243, 1);
+    font-weight: 300;
+    padding-top: 1rem;
+    /*padding-bottom: 1rem;*/
+    font-size: 0.8rem;
+}
+
+
+
+
+/*소개파트 이미지*/
+
+#contents .profileImage {
+    /*border-radius: 100%;*/
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.25);
+    margin: 1rem 0 ;
+    text-align: center;
+}
+
+
+#contents .profileImage img {
+    /*border-radius: 100%;*/
+    display: block;
+    width: 400px;
+}
+
+
+
+/*코드 다이어리+라이브러리 파트 */
+
+#lnb  {
+    width: 10%;
+    height: auto;
+    margin: 2rem 1rem;
+    float: left;
+    /*display: inline-block;*/
+}
+
+#lnb ul {
+    height: border-box;
+    width: border-box;
+}
+
+
+#lnb ul li {
+    /*display: block;*/
+    width: 8.1rem;
+    height: border-box;
+    margin:  3rem 1rem 1rem 1rem;
+    overflow: hidden;
+}
+
+#lnb ul a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fffff3;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+#lnb ul a:hover{
+    color: #d1b6e1;
+}
+
+
+
+#codeWrap {
+    width: 70%;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.25);
+    margin: 1rem  ;
+    overflow: auto;
+
+
+
+}
+
+#codeWrap iframe {
+    position: relative;
+    width: 100%;
+    min-height: 800px;
+}
+
+
+
+/*취미 파트*/
+
+#hobbyWrap {
+    width: 70%;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.25);
+    margin: 1rem  ;
+    overflow: auto;
+}
+
+#hobbyWrap div {
+    /*display: inline-block;*/
+}
+
+#hobbyWrap ul  li {
+    display: inline-block;
+}
+
+#hobbyWrap li img {
+    position: relative;
+    width: 40%;
+    display: inline-block;
+    object-fit: contain;
+    max-height: 500px;
+    padding: 0.5rem;
+    background-color: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.25);
+    margin: 1rem  ;
+    overflow: auto;
+
+}
+
+/*슬라이드*/
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin: 0;}
+.mySlides {display: none; margin: 5rem 0 0 0;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+
+}
+
+.slideshow-container:hover {
+    cursor: pointer !important;
+
+}
+
+.mySlides.fade .text {
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.mySlides.fade .text :hover {
+    color: #d1b6e1;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size:18px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dotB{
+    margin: 0 0 5rem 0;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+
+
+.mySlides.fade img {
+    width:300px;
+    height: 300px;
+    object-fit: cover;
+}
